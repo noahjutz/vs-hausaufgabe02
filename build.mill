@@ -1,0 +1,9 @@
+package build
+import mill._, javalib._
+
+object `package` extends JavaModule {
+  def mainClass: T[Option[String]] = Some("Main")
+
+  def jvmId = "temurin:25"
+  def jvmIndexVersion = "latest.release"
+}
